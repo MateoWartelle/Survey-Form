@@ -253,7 +253,6 @@ jQuery('.mm-prev-btn').hide();
                 data: {radioVar1 : radio1, radioVar2 : radio2, radioVar3 : radio3, radioVar4 : radio4},
                 success : [
                     function(response) {
-                        alert(response);
                         jQuery('.success').fadeIn(700).show();
                     }
                 ]
