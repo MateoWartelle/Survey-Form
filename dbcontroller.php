@@ -4,8 +4,8 @@ error_reporting(0);
 class DBController
 {
     private $host = "localhost";
-    private $user = "Mateo";
-    private $password = "FuckYouMYSQL1993?";
+    private $user = "root";
+    private $password = "password";
     private $database = "Survey";
     private $conn;
 
@@ -40,6 +40,7 @@ class DBController
     function updateQuery($query)
     {
         $result = mysqli_query($this->conn, $query);
+        echo "Attempted";
         if (!$result) {
             die('Invalid query');
         } else {
